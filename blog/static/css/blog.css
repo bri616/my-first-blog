@@ -16,6 +16,7 @@ body {
 }
 
 .content {
+    border-left: 1px solid lightgrey;
     margin-left: 40px;
 }
 
