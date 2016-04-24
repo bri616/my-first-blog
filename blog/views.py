@@ -4,6 +4,12 @@ from .models import Post
 from .forms import PostForm
 
 
+def post_remove(request, pk):
+        post = get_object_or_404(Post, pk=pk)
+        post.delete()
+        return redirect('blog.views.post_list')
+
+
 def post_draft_list(request):
         posts = Post.objects.filter(published_date__isnull=True
                                     ).order_by('created_date')
