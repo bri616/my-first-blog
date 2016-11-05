@@ -25,7 +25,9 @@ SECRET_KEY = '1z01fv8&8q^5t53serw@kvsv%tovijk%c8zced@-r!&mb5!iuq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'brigid616.pythonanywhere.com',
+]
 
 
 # Application definition
@@ -38,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'wx_widgets',
 )
 
 MIDDLEWARE_CLASSES = (
